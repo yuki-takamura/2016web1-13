@@ -42,7 +42,7 @@ document.getElementById('form').select.onchange = function(){
   location.href = document.getElementById('form').select.value;
 }
 
-fuction setCoolie(c_name,value,expiredays){
+/*fuction setCookie(c_name,value,expiredays){
   var extime = new Date().getTime();
   var cltime = new Date(extime + (60*60*24*1000*expiredays));
   var exdate = cltime.toUTCString();
@@ -87,4 +87,4 @@ setCookie('lastDate',current_time.toString(),7);
 
 document.getElementById('remove_cookie').onsubmit = function(){
   setCookie('lastDate',"",0);
-};
+};*/
