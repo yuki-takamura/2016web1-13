@@ -88,3 +88,10 @@ setCookie('lastDate',current_time.toString(),7);
 document.getElementById('remove_cookie').onsubmit = function(){
   setCookie('lastDate',"",0);
 };*/
+
+var thmubs = document.querySlectorAll('.thumb');
+for(idx in thmubs){
+  thmubs[idx].onclick = function(){
+    document.getElementById("bigimg").src = 'img/' + this.dataset.image + '.jpg';
+  }
+}
